@@ -1,0 +1,38 @@
+{
+  "dataset_rows_used": 60000,
+  "features": [
+    "Temp_2m_C",
+    "Humidity_Percent",
+    "Wind_Speed_10m_kmh",
+    "Pressure_MSL_hPa",
+    "UV_Index",
+    "PM2_5_ugm3",
+    "PM10_ugm3",
+    "CO_ugm3",
+    "NO2_ugm3",
+    "SO2_ugm3",
+    "O3_ugm3",
+    "NH3_ugm3",
+    "Dust_ugm3"
+  ],
+  "target": "US_AQI",
+  "regression": {
+    "mae": 14.32557181472918,
+    "rmse": 35.36372481202085,
+    "r2": 0.7599338152716876
+  },
+  "classification_from_regression": {
+    "aqi_bands": [
+      "Good",
+      "Moderate",
+      "USG",
+      "Unhealthy",
+      "Very Unhealthy",
+      "Hazardous"
+    ],
+    "accuracy": 0.7414166666666666,
+    "precision_weighted": 0.754428406862924,
+    "recall_weighted": 0.7414166666666666,
+    "f1_weighted": 0.7439046023838409
+  }
+}
